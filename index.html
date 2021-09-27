@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/style/style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Pod request access landing page</title>
+	</head>
+	<body>
+		<header class="logo">
+			<img src="./assets/desktop/logo.svg" alt="logo" />
+		</header>
+		<main>
+			<h1>Publish your podcasts <span>everywhere.</span></h1>
+			<p>
+				Upload your audio to Pod with a single click. We’ll then distribute your
+				podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
+				more!
+			</p>
+			<section class="podcasts">
+				<img class="spotify" src="./assets/desktop/spotify.svg" alt="Spotify" />
+				<img
+					class="apple"
+					src="./assets/desktop/apple-podcast.svg"
+					alt="Apple Podcast"
+				/>
+				<img
+					class="google"
+					src="./assets/desktop/google-podcasts.svg"
+					alt="Google Podcasts"
+				/>
+				<img
+					class="pocket"
+					src="./assets/desktop/pocket-casts.svg"
+					alt="Pocket Casts"
+				/>
+			</section>
+			<section id="inputs" class="inputs">
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Email address"
+				/>
+				<input
+					id="submit"
+					type="submit"
+					value="Request Access"
+					onclick="checkEmail()"
+				/>
+				<p id="error"></p>
+			</section>
+		</main>
+		<footer>
+			<figure></figure>
+		</footer>
+		<script src="/app.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+@use "_colors" as *;
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	@media only screen and (min-width: 768px) {
+		justify-content: flex-start;
+	}
+
+	img {
+		margin-top: 62px;
+		margin-bottom: 57px;
+
+		@media only screen and (min-width: 768px) {
+			margin-top: 50px;
+			margin-left: 39px;
+			margin-bottom: 152px;
+		}
+
+		@media only screen and (min-width: 1440px) {
+			margin: 0;
+			margin-top: 102px;
+			margin-left: 165px;
+		}
+	}
+}

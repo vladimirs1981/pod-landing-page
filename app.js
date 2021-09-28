@@ -10,12 +10,12 @@ function checkEmail() {
 
 	if (email == "") {
 		$errorMessage.text("Oops! Please add your email");
-		document.getElementById("inputs").style.marginBottom = "14px";
+		$(".inputs").css("margin-bottom", "14px");
 	} else if (!validateEmail(email)) {
 		$errorMessage.text("Oops! Please check your email");
-		document.getElementById("inputs").style.marginBottom = "14px";
+		$(".inputs").css("margin-bottom", "14px");
 	} else {
 		$errorMessage.text("");
-		document.getElementById("inputs").style.marginBottom = "42px";
+		$(".inputs").css("margin-bottom", "42px");
 	}
 }

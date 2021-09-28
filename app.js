@@ -3,19 +3,17 @@ function validateEmail(email) {
 	return re.test(email);
 }
 
-function checkEmail() {
+$("#submit").click(function () {
 	const $errorMessage = $("#error");
 	const email = $("#email").val();
-	$errorMessage.text("");
 
 	if (email == "") {
-		$errorMessage.text("Oops! Please add your email");
-		$(".inputs").css("margin-bottom", "14px");
+		$errorMessage.css({ visibility: "visible" });
 	} else if (!validateEmail(email)) {
-		$errorMessage.text("Oops! Please check your email");
-		$(".inputs").css("margin-bottom", "14px");
+		$errorMessage
+			.text("Oops! Please check your email")
+			.css({ visibility: "visible" });
 	} else {
-		$errorMessage.text("");
-		$(".inputs").css("margin-bottom", "42px");
+		$errorMessage.css({ visibility: "hidden" });
 	}
-}
+});

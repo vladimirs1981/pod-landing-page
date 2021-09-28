@@ -215,7 +215,7 @@ main .inputs {
   main .inputs {
     position: relative;
     order: 3;
-    padding-bottom: 64px;
+    margin-bottom: 42px;
     align-items: flex-start;
   }
 }
@@ -297,6 +297,7 @@ main .inputs #error {
   font-size: 12px;
   line-height: auto;
   font-weight: bold;
+  visibility: hidden;
 }
 @media only screen and (min-width: 768px) {
   main .inputs #error {

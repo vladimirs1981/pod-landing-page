@@ -7,13 +7,13 @@ $('#submit').click(function () {
 	const $errorMessage = $('#error');
 	const email = $('#email').val();
 
-	if (email == "") {
-		$errorMessage.css({ visibility: "visible" });
+	if (email === '' || email == null) {
+		$errorMessage.css({ visibility: 'visible' });
 	} else if (!validateEmail(email)) {
 		$errorMessage
 			.text("Oops! Please check your email")
-			.css({ visibility: "visible" });
+			.css({ visibility: 'visible' });
 	} else {
-		$errorMessage.css({ visibility: "hidden" });
+		$errorMessage.css({ visibility: 'hidden' });
 	}
 });

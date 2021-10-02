@@ -4,7 +4,7 @@
   "description": "landing page",
   "main": "app.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{scss}\"",
+    "format": "prettier --write \"**/*.{js,scss}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/vladimirs1981/pod-landing-page/issues"
   },
-  "homepage": "https://github.com/vladimirs1981/pod-landing-page#readme"
+  "homepage": "https://github.com/vladimirs1981/pod-landing-page#readme",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
 }

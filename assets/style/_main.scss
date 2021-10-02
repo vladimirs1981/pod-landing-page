@@ -1,228 +1,228 @@
-@use "_colors" as *;
+@use '_colors' as *;
 
 main {
-	@media only screen and (min-width: 768px) {
-		display: flex;
-		flex-direction: column;
-		align-content: flex-start;
-		background-color: $black;
-		width: 635px;
-		height: 510px;
-		margin-left: 39px;
-	}
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        background-color: $black;
+        width: 635px;
+        height: 510px;
+        margin-left: 39px;
+    }
 
-	@media only screen and (min-width: 1440px) {
-		margin: 0;
-		margin-left: 165px;
-		margin-top: 103px;
-		width: 732px;
-		height: 510px;
-	}
+    @media only screen and (min-width: 1440px) {
+        margin: 0;
+        margin-left: 165px;
+        margin-top: 103px;
+        width: 732px;
+        height: 510px;
+    }
 
-	h1 {
-		font-size: 26px;
-		line-height: 38px;
-		color: $monoGreen;
-		text-align: center;
-		text-transform: uppercase;
-		font-style: normal;
-		font-weight: normal;
-		margin-bottom: 16px;
+    h1 {
+        font-size: 26px;
+        line-height: 38px;
+        color: $monoGreen;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 16px;
 
-		@media only screen and (min-width: 768px) {
-			font-size: 48px;
-			line-height: 56px;
-			text-align: left;
-			margin-top: 93px;
-			margin-bottom: 31px;
-		}
+        @media only screen and (min-width: 768px) {
+            font-size: 48px;
+            line-height: 56px;
+            text-align: left;
+            margin-top: 93px;
+            margin-bottom: 31px;
+        }
 
-		@media only screen and (min-width: 1440px) {
-			font-size: 52px;
-			line-height: 62px;
-			margin-bottom: 24px;
-		}
+        @media only screen and (min-width: 1440px) {
+            font-size: 52px;
+            line-height: 62px;
+            margin-bottom: 24px;
+        }
 
-		span {
-			color: $white;
-		}
-	}
+        span {
+            color: $white;
+        }
+    }
 
-	p {
-		color: $blueGrey;
-		font-size: 15px;
-		line-height: 25px;
-		font-style: normal;
-		font-weight: normal;
-		text-align: center;
-		margin-bottom: 33px;
-		margin-left: 24px;
-		margin-right: 24px;
+    p {
+        color: $blueGrey;
+        font-size: 15px;
+        line-height: 25px;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 33px;
+        margin-left: 24px;
+        margin-right: 24px;
 
-		@media only screen and (min-width: 768px) {
-			font-size: 18px;
-			line-height: 28px;
-			text-align: left;
-			margin-left: 0;
-			margin-right: 190px;
-		}
+        @media only screen and (min-width: 768px) {
+            font-size: 18px;
+            line-height: 28px;
+            text-align: left;
+            margin-left: 0;
+            margin-right: 190px;
+        }
 
-		@media only screen and (min-width: 1440px) {
-			margin-right: 278px;
-			margin-bottom: 40px;
-		}
-	}
+        @media only screen and (min-width: 1440px) {
+            margin-right: 278px;
+            margin-bottom: 40px;
+        }
+    }
 
-	.podcasts {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-		margin-bottom: 48px;
+    .podcasts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 48px;
 
-		@media only screen and (min-width: 768px) {
-			order: 4;
-			justify-content: space-between;
-			width: 536px;
-		}
+        @media only screen and (min-width: 768px) {
+            order: 4;
+            justify-content: space-between;
+            width: 536px;
+        }
 
-		.spotify {
-			width: 56px;
-			height: 17px;
+        .spotify {
+            width: 56px;
+            height: 17px;
 
-			@media only screen and (min-width: 768px) {
-				width: auto;
-				height: auto;
-			}
-		}
+            @media only screen and (min-width: 768px) {
+                width: auto;
+                height: auto;
+            }
+        }
 
-		.apple {
-			width: 45px;
-			height: 17px;
+        .apple {
+            width: 45px;
+            height: 17px;
 
-			@media only screen and (min-width: 768px) {
-				width: auto;
-				height: auto;
-			}
-		}
+            @media only screen and (min-width: 768px) {
+                width: auto;
+                height: auto;
+            }
+        }
 
-		.google {
-			width: 73px;
-			height: 11px;
+        .google {
+            width: 73px;
+            height: 11px;
 
-			@media only screen and (min-width: 768px) {
-				width: auto;
-				height: auto;
-			}
-		}
+            @media only screen and (min-width: 768px) {
+                width: auto;
+                height: auto;
+            }
+        }
 
-		.pocket {
-			width: 77px;
-			height: 15px;
+        .pocket {
+            width: 77px;
+            height: 15px;
 
-			@media only screen and (min-width: 768px) {
-				width: auto;
-				height: auto;
-			}
-		}
-	}
+            @media only screen and (min-width: 768px) {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
 
-	.inputs {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-		@media only screen and (min-width: 768px) {
-			position: relative;
-			order: 3;
-			margin-bottom: 42px;
-			align-items: flex-start;
-		}
+        @media only screen and (min-width: 768px) {
+            position: relative;
+            order: 3;
+            margin-bottom: 42px;
+            align-items: flex-start;
+        }
 
-		@media only screen and (min-width: 1440px) {
-			padding: 0;
-			margin-bottom: 42px;
-			width: 427px;
-		}
+        @media only screen and (min-width: 1440px) {
+            padding: 0;
+            margin-bottom: 42px;
+            width: 427px;
+        }
 
-		input {
-			font-family: Chivo;
-			background: $darkGrey;
-			border: none;
-			border-radius: 28px;
-			width: 327px;
-			height: 46px;
-			color: $white;
-			font-size: 14px;
-			line-height: 28px;
-			margin-bottom: 16px;
-			font-weight: bold;
-			z-index: 1;
-			padding-left: 32px;
-			&::placeholder {
-				background: $darkGrey;
-				color: $white;
-				font-size: 14px;
-				line-height: 28px;
-				font-style: normal;
-				font-weight: bold;
-				mix-blend-mode: normal;
-				opacity: 0.5;
-			}
+        input {
+            font-family: Chivo;
+            background: $darkGrey;
+            border: none;
+            border-radius: 28px;
+            width: 327px;
+            height: 46px;
+            color: $white;
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 16px;
+            font-weight: bold;
+            z-index: 1;
+            padding-left: 32px;
+            &::placeholder {
+                background: $darkGrey;
+                color: $white;
+                font-size: 14px;
+                line-height: 28px;
+                font-style: normal;
+                font-weight: bold;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
 
-			@media only screen and (min-width: 768px) {
-				margin: 0;
-				height: 56px;
-				width: 427px;
-			}
-		}
+            @media only screen and (min-width: 768px) {
+                margin: 0;
+                height: 56px;
+                width: 427px;
+            }
+        }
 
-		input[type="submit"] {
-			background-color: $monoGreen;
-			color: $black;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 14px;
-			line-height: 28px;
-			z-index: 1;
-			text-shadow: 0px 4px 4px $textShadow;
-			padding: 0;
+        input[type='submit'] {
+            background-color: $monoGreen;
+            color: $black;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 28px;
+            z-index: 1;
+            text-shadow: 0px 4px 4px $textShadow;
+            padding: 0;
 
-			@media only screen and (min-width: 768px) {
-				position: absolute;
-				right: 0;
-				width: 162px;
-				height: 46px;
-				right: 213px;
-				top: 5px;
-				text-shadow: none;
-			}
+            @media only screen and (min-width: 768px) {
+                position: absolute;
+                right: 0;
+                width: 162px;
+                height: 46px;
+                right: 213px;
+                top: 5px;
+                text-shadow: none;
+            }
 
-			@media only screen and (min-width: 1440px) {
-				right: 5px;
-				&:hover {
-					background: $buttonHover;
-					cursor: pointer;
-				}
-				&:active {
-					background: $monoGreen;
-				}
-			}
-		}
+            @media only screen and (min-width: 1440px) {
+                right: 5px;
+                &:hover {
+                    background: $buttonHover;
+                    cursor: pointer;
+                }
+                &:active {
+                    background: $monoGreen;
+                }
+            }
+        }
 
-		#error {
-			color: $error;
-			font-size: 12px;
-			line-height: auto;
-			font-weight: bold;
-			visibility: hidden;
+        #error {
+            color: $error;
+            font-size: 12px;
+            line-height: auto;
+            font-weight: bold;
+            visibility: hidden;
 
-			@media only screen and (min-width: 768px) {
-				margin: 0;
-				margin-top: 8px;
-				margin-left: 32px;
-			}
-		}
-	}
+            @media only screen and (min-width: 768px) {
+                margin: 0;
+                margin-top: 8px;
+                margin-left: 32px;
+            }
+        }
+    }
 }

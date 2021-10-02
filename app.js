@@ -4,7 +4,7 @@ function validateEmail(email) {
 }
 
 $("#submit").click(function () {
-	const $errorMessage = $("#error");
+	const $errorMessage = $('#error');
 	const email = $("#email").val();
 
 	if (email === "" || email == null) {

@@ -3,15 +3,9 @@ function validateEmail(email) {
 	return re.test(email);
 }
 
-<<<<<<< HEAD
 $('#submit').click(function () {
 	const $errorMessage = $('#error');
 	const email = $('#email').val();
-=======
-$("#submit").click(function () {
-	const $errorMessage = $('#error');
-	const email = $("#email").val();
->>>>>>> bdf721cc33909a4d850745bd530e3161e5119034
 
 	if (email === '' || email == null) {
 		$errorMessage.css({ visibility: 'visible' });

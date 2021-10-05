@@ -1,0 +1,47 @@
+@use '_colors' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: $black;
+    font-family: Chivo, sans-serif;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: $black;
+        background-image: url(../mobile/image-host.jpg);
+        opacity: 0.04;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        mix-blend-mode: normal;
+
+        @media only screen and (min-width: 768px) {
+            background-image: url(../tablet/image-host.jpg);
+            background-size: auto;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 277px;
+            opacity: 0.9;
+            z-index: -1;
+        }
+
+        @media only screen and (min-width: 1440px) {
+            background-image: url(../desktop/image-host.jpg);
+            left: 0px;
+            margin-top: 130px;
+            margin-left: 552px;
+        }
+    }
+}

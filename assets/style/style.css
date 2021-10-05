@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #121725;
+  font-family: Chivo, sans-serif;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: #121725;
+  background-image: url(../mobile/image-host.jpg);
+  opacity: 0.04;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  mix-blend-mode: normal;
+}
+@media only screen and (min-width: 768px) {
+  body::before {
+    background-image: url(../tablet/image-host.jpg);
+    background-size: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 277px;
+    opacity: 0.9;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body::before {
+    background-image: url(../desktop/image-host.jpg);
+    left: 0px;
+    margin-top: 130px;
+    margin-left: 552px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    justify-content: flex-start;
+  }
+}
+header img {
+  margin-top: 62px;
+  margin-bottom: 57px;
+}
+@media only screen and (min-width: 768px) {
+  header img {
+    margin-top: 50px;
+    margin-left: 39px;
+    margin-bottom: 152px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header img {
+    margin: 0;
+    margin-top: 102px;
+    margin-left: 165px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: #121725;
+    width: 635px;
+    height: 510px;
+    margin-left: 39px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main {
+    margin: 0;
+    margin-left: 165px;
+    margin-top: 103px;
+    width: 732px;
+    height: 510px;
+  }
+}
+main h1 {
+  font-size: 26px;
+  line-height: 38px;
+  color: #54E6AF;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  main h1 {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+    margin-top: 93px;
+    margin-bottom: 31px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main h1 {
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 24px;
+  }
+}
+main h1 span {
+  color: #FFFFFF;
+}
+main p {
+  color: #C2CBE5;
+  font-size: 15px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 33px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media only screen and (min-width: 768px) {
+  main p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 190px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main p {
+    margin-right: 278px;
+    margin-bottom: 40px;
+  }
+}
+main .podcasts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  main .podcasts {
+    order: 4;
+    justify-content: space-between;
+    width: 536px;
+  }
+}
+main .podcasts .spotify {
+  width: 56px;
+  height: 17px;
+}
+@media only screen and (min-width: 768px) {
+  main .podcasts .spotify {
+    width: auto;
+    height: auto;
+  }
+}
+main .podcasts .apple {
+  width: 45px;
+  height: 17px;
+}
+@media only screen and (min-width: 768px) {
+  main .podcasts .apple {
+    width: auto;
+    height: auto;
+  }
+}
+main .podcasts .google {
+  width: 73px;
+  height: 11px;
+}
+@media only screen and (min-width: 768px) {
+  main .podcasts .google {
+    width: auto;
+    height: auto;
+  }
+}
+main .podcasts .pocket {
+  width: 77px;
+  height: 15px;
+}
+@media only screen and (min-width: 768px) {
+  main .podcasts .pocket {
+    width: auto;
+    height: auto;
+  }
+}
+main .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  main .inputs {
+    position: relative;
+    order: 3;
+    margin-bottom: 42px;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .inputs {
+    padding: 0;
+    margin-bottom: 42px;
+    width: 427px;
+  }
+}
+main .inputs input {
+  font-family: Chivo;
+  background: #2C344B;
+  border: none;
+  border-radius: 28px;
+  width: 327px;
+  height: 46px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  z-index: 1;
+  padding-left: 32px;
+}
+main .inputs input::placeholder {
+  background: #2C344B;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: bold;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+@media only screen and (min-width: 768px) {
+  main .inputs input {
+    margin: 0;
+    height: 56px;
+    width: 427px;
+  }
+}
+main .inputs input[type=submit] {
+  background-color: #54E6AF;
+  color: #121725;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  z-index: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  main .inputs input[type=submit] {
+    position: absolute;
+    right: 0;
+    width: 162px;
+    height: 46px;
+    right: 213px;
+    top: 5px;
+    text-shadow: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .inputs input[type=submit] {
+    right: 5px;
+  }
+  main .inputs input[type=submit]:hover {
+    background: #B3FFE2;
+    cursor: pointer;
+  }
+  main .inputs input[type=submit]:active {
+    background: #54E6AF;
+  }
+}
+main .inputs #error {
+  color: #FB3E3E;
+  font-size: 12px;
+  line-height: auto;
+  font-weight: bold;
+  visibility: hidden;
+}
+@media only screen and (min-width: 768px) {
+  main .inputs #error {
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  footer figure {
+    position: absolute;
+    background-image: url(../desktop/bg-pattern-dots.svg);
+    bottom: 0;
+    top: 152px;
+    display: block;
+    width: 232px;
+    height: 104px;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  footer figure {
+    right: 0;
+    top: -52px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

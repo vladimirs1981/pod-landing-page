@@ -1,0 +1,23 @@
+{
+  "name": "pod-access-landing-page",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "app.js",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,scss}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirs1981/pod-landing-page.git"
+  },
+  "author": "Vladimir Stojanovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimirs1981/pod-landing-page/issues"
+  },
+  "homepage": "https://github.com/vladimirs1981/pod-landing-page#readme",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
